@@ -70,7 +70,10 @@ hr {
   &:hover .bg__card {
     opacity: 1;
   }
-
+  &:hover .card-icon {
+    transform: rotate(-135deg);
+    background-color: var(--rapture-blue);
+  }
 }
 
 .card:nth-child(4) {
@@ -185,9 +188,12 @@ hr {
   display: flex;
   flex-wrap: wrap;
   gap: 7.5rem;
+  /* justify-content: space-between; */
 }
 
+/* BREACKPOINT */
 
+/* TABLET START */
 @media (max-width: 1000px) {
   .hero__container {
     padding-left: 0;
@@ -278,7 +284,9 @@ hr {
     height: 32px;
   }
 }
+/* TABLET END */
 
+/* MOBILE START */
 @media (max-width: 450px) {
   .hero__container {
     padding-left: 2.4rem;
@@ -335,7 +343,7 @@ hr {
     padding-left: 2.4rem;
     padding-right: 2.4rem;
   }
-  
+  /* CLIENTS   mobile */
 
   .clients {
     background: url(../../images/about-clients-bg-img.svg) top -10rem left -10rem
@@ -366,3 +374,4 @@ hr {
     gap: 7rem;
   }
 }
+/* MOBILE END */

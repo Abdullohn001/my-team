@@ -1,10 +1,105 @@
 @import url(./fonts.css);
 @import url(./normalize.css);
 @import url(./base.css);
-@import url(./variable.css);
+@import url(./varibles.css);
 
 
-.btn {
+
+  header {
+    background-color: var(--midnight-green);
+    padding-top: 7.7rem;
+  }
+  
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13.3rem;
+  }
+  
+  .header-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .header-logo-link {
+    margin-right: 8rem;
+  }
+  
+  .sitenav-list {
+    display: flex;
+    gap: 4rem;
+  }
+  
+  .sitenav-link {
+    font-size: var(--body1-font);
+    font-weight: 600;
+    line-height: var(--body1-lh);
+    text-align: left;
+    color: var(--wight-color);
+    &:hover {
+      color: var(--light-color);
+    }
+  }
+  .sitenav-img {
+    display: none;
+  }
+  .header-link {
+    background-color: var(--midnight-green);
+  
+    &:hover {
+      background-color: var(--wight-color);
+      color: var(--dark-green);
+    }
+  
+    &:active {
+      opacity: 0.3;
+    }
+  }
+  
+  .hero {
+    background: url(../images/hero-bg-img1.png) left top no-repeat,
+      url(../images/hero-bg-img2.svg) bottom right 16.5rem no-repeat;
+  }
+  .hero__container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25rem;
+  }
+  
+  .hero__container-title {
+    font-size: var(--h1-large);
+    font-weight: 700;
+    line-height: var(--h1-large-lh);
+    text-align: left;
+    color: var(--wight-color);
+  }
+  
+  .hero__container-title span {
+    color: var(--light-color);
+  }
+  
+  .hero__container-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  hr {
+    border: none;
+    width: 50px;
+    height: 4px;
+    background-color: var(--rapture-blue);
+  }
+  .hero__container-description {
+    font-size: var(--body1-font);
+    font-weight: 600;
+    line-height: var(--body1-lh);
+    text-align: left;
+    color: var(--wight-color);
+    width: 445px;
+  }
+  .btn {
     padding-top: 0.9rem;
     padding-bottom: 1.1rem;
     padding-left: 3.2rem;
@@ -60,97 +155,6 @@
     margin-bottom: 1rem;
   }
   
-  header {
-    background-color: var(--midnight-green);
-    padding-top: 7.7rem;
-  }
-  
-  .header__container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 13.3rem;
-  }
-  
-  .header-box {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  
-  .header-logo-link {
-    margin-right: 8rem;
-  }
-  
-  .sitenav-list {
-    display: flex;
-    gap: 4rem;
-  }
-  
-  .sitenav-link {
-    font-size: var(--body1-font);
-    font-weight: 600;
-    line-height: var(--body1-lh);
-    text-align: left;
-    color: var(--wight-color);
-    &:hover {
-      color: var(--light-color);
-    }
-  }
-  .sitenav-img {
-    display: none;
-  }
-  .header-link {
-    background-color: var(--midnight-green);
-  
-
-  
-    &:active {
-      opacity: 0.3;
-    }
-  }
-  
-  .hero {
-    background: url(../images/hero-bg-img1.png) left top no-repeat,
-      url(../images/hero-bg-img2.svg) bottom right 16.5rem no-repeat;
-  }
-  .hero__container {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 25rem;
-  }
-  
-  .hero__container-title {
-    font-size: var(--h1-large);
-    font-weight: 700;
-    line-height: var(--h1-large-lh);
-    text-align: left;
-    color: var(--wight-color);
-  }
-  
-  .hero__container-title span {
-    color: var(--light-color);
-  }
-  
-  .hero__container-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  hr {
-    border: none;
-    width: 50px;
-    height: 4px;
-    background-color: var(--rapture-blue);
-  }
-  .hero__container-description {
-    font-size: var(--body1-font);
-    font-weight: 600;
-    line-height: var(--body1-lh);
-    text-align: left;
-    color: var(--wight-color);
-    width: 445px;
-  }
   
   /* main */
   .features {
@@ -363,9 +367,7 @@
     margin-bottom: 0.5rem;
     user-select: none;
     transition: 0.3s;
-    &:hover {
-      opacity: 1;
-    }
+
   }
   .footer-right {
     display: flex;
@@ -805,3 +807,4 @@
         display: block;
       }
     }
+  
